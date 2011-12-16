@@ -1,8 +1,8 @@
 LandingPageApp::Application.routes.draw do
   
-  get "users/home"
+  resources :users
 
-  root :to => 'pages#home'
+  root :to => 'users#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
