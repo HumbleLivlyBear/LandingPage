@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  need1: false
+  need2: false
+  need3: false
+  need4: false
+  need5: false
+  need6: false
+  need7: false
+  others: MyString
+
+two:
+  need1: false
+  need2: false
+  need3: false
+  need4: false
+  need5: false
+  need6: false
+  need7: false
+  others: MyString
