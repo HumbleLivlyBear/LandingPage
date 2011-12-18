@@ -17,5 +17,10 @@ class UsersController < ApplicationController
     flash[:success] = "Welcome to the Sample App!"
     render 'index'
   end
+  
+  def show
+      @test = Userneeds.all
+      # render :text => @test.to_s
+  end
 
 end

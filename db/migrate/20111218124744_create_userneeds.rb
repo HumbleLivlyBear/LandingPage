@@ -1,6 +1,6 @@
 class CreateUserneeds < ActiveRecord::Migration
   def change
-    create_table :userneed do |t|
+    create_table :userneeds do |t|
       t.boolean :need1
       t.boolean :need2
       t.boolean :need3
@@ -9,6 +9,7 @@ class CreateUserneeds < ActiveRecord::Migration
       t.boolean :need6
       t.boolean :need7
       t.string :others
+      t.string :email
 
       t.timestamps
     end
