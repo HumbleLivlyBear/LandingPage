@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META name="keywords" content="地點記, Android App">
+<META name="description" content="地點記 MineMap : 隨手記錄生活地圖">
+<title>地點記 </title>
+<link rel="shortcut icon" href="favicon.ico">
+<style type="text/css">
+<!--
+
+-->
+</style>
+
+<link href="index2011.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+
+<div id="header" style="margin-top: 50px;">
+<table width="960" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="240"><%=  image_tag("logo.png") %></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</div>
+<div id="container" style="margin-top: 40px;"> 
+<table width="960" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td width="240" style="vertical-align:top;"><%=  image_tag("phone.png") %></td>
+    <td width="40">&nbsp;</td>
+    <td width="680" style="vertical-align:top;">
+    <div style="float:left; width:680px;">
+    <span>
+    <p class="pStyle"><font color="#b00002">App大方送，任何完成以下問卷者，將享有獨家優惠!!!</font></p>
+        <p class="pStyleSub"><font color="#475868">MineMap 致力於優化您的個人地圖，如果您有任何以下問題，請留下Email，我們會把解決您的問題，<br />
+          當成我們的責任：</font></p>
+    </span>
+    </div>
+    <div style="float:left; width:680px; vertical-align:top; margin-top:0px;"><table width="580" border="0" align="center" cellpadding="0" cellspacing="0" class="pStyleContent">
+  <tr>
+    <td width="15" height="25">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td width="80">是 Yes</td>
+    <td width="80">不是 No</td>
+  </tr>
+  <%= form_for @user, :url => { :controller => :users, :action => :create} do |f| %>
+ 
+  <tr>
+    <td width="15" height="25">1．</td>
+    <td>覺得朋友的地點難找嗎？</td>
+    <td width="80"><%= f.radio_button(:need1, true) %></td>
+    <td width="80"><%= f.radio_button(:need1, false) %></td>
+  </tr>
+  <tr>
+    <td width="15" height="25">2．</td>
+    <td>覺得手機上輸入地點麻煩？</td>
+    <td width="80"><%= f.radio_button(:need2, true) %></td>
+    <td width="80"><%= f.radio_button(:need2, false) %></td>
+  </tr>
+  <tr>
+    <td width="15" height="25">3．</td>
+    <td>想在手機上使用方便的導航？</td>
+    <td width="80"><%= f.radio_button(:need3, true) %></td>
+    <td width="80"><%= f.radio_button(:need3, false) %></td>
+  </tr>
+  <tr>
+    <td width="15" height="25">4．</td>
+    <td>想在網站上大量匯入、編輯朋友，客戶的位置？</td>
+    <td width="80"><%= f.radio_button(:need4, true) %></td>
+    <td width="80"><%= f.radio_button(:need4, false) %></td>
+  </tr>
+  <tr>
+    <td width="15" height="25">5．</td>
+    <td>想用手機記錄當下朋友的位置？</td>
+    <td width="80"><%= f.radio_button(:need5, true) %></td>
+    <td width="80"><%= f.radio_button(:need5, false) %></td>
+  </tr>
+  <tr>
+    <td width="15" height="25">6．</td>
+    <td>想分享某個秘密基地給朋友嗎？</td>
+    <td width="80"><%= f.radio_button(:need6, true) %></td>
+    <td width="80"><%= f.radio_button(:need6, false) %></td>
+  </tr>
+  <tr>
+    <td width="15" height="25">7．</td>
+    <td>想方便查找最近的中油、統一超商或公車站牌？</td>
+    <td width="80"><%= f.radio_button(:need7, true) %></td>
+    <td width="80"><%= f.radio_button(:need7, false) %></td>
+  </tr>
+  <tr>
+    <td width="15" height="25">8．</td>
+    <td>其他建議 
+        
+      </td>
+    <td width="80">&nbsp;</td>
+    <td width="80">&nbsp;</td>
+  </tr>
+   <tr>
+    <td width="15" height="25">&nbsp;</td>
+    <td><%= f.text_area (:others), :size => "60x5" %></td>
+    <td width="80">&nbsp;</td>
+    <td width="80">&nbsp;</td>
+  </tr>
+ 
+</table>
+</div>
+     <div style="float:left; width:680px; vertical-align:top; margin-top:20px;">
+    <table width="580" border="0" align="center" cellpadding="0" cellspacing="0" class="pStyleEmail">
+  <tr>
+    <td width="25" height="25">&nbsp;</td>
+    <td width="50">Email：</td>
+    <td>
+      <label for="Email"></label>
+      <%= f.email_field(:email)%>&nbsp;&nbsp;&nbsp;
+      <%= f.submit "寄出" , :class=>"buttonSubmit"%>
+    </td>
+    <td width="10">
+      
+    </td>
+  </tr>
+ <% end %>
+</table>
+    </div>
+    </td>
+  </tr>
+</table>
+</div>
+<div id="footer" style="margin-top:100px;"><table width="960" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td><%=  image_tag("android2.png", :width =>24, :height =>24 )  %>&nbsp;&nbsp;<%=  image_tag("apple3.png", :width =>24, :height =>24 )  %></td>
+    <td width="700" align="right" class="footerContent"><font color="#475868">版權所有 © 2011 地點記 ﹣ humblelivlybear@gmail.com ﹣ HumbleLivlyBear All Rights Reserved.</font></td>
+  </tr>
+</table>
+</div>
+  
+
+
+
+
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 class CreateUserneeds < ActiveRecord::Migration
   def change
-    create_table :userneeds do |t|
+    create_table :userneed do |t|
       t.boolean :need1
       t.boolean :need2
       t.boolean :need3

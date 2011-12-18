@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+body > #wrap
+{
+	min-height: 600px;
+	float: left;
+}
+
+html, body, #wrap
+{
+min-height: 600px;
+}
+
+.header{
+	float: left;
+}
+
+.container{
+	
+	float: left;
+}
+
+.footer{
+	
+	float: left;
+}
+
+.logo{
+	float: left;
+}
+
+.phone{
+	height:422px;
+	float: left;
+}
+.buttonSubmit {
+	background-color: #475868;
+	height: 20px;
+	width: 60px;
+	color: white;
+	font-size: 12px;
+	border: none;
+}
+
+
+.buttonSubmit:hover
+{
+	font-size: 12px;
+	color: #475868;
+	background-color: #FFF;
+	height: 20px;
+	width: 60px;
+	border: thin solid #475868;
+}
+.pStyle{
+	font-family:Arial, Helvetica, sans-serif, 微軟正黑體; font-size:16px; font-weight:normal;
+}
+
+.pStyleSub{
+	font-family:Arial, Helvetica, sans-serif, 微軟正黑體; font-size:14px; font-weight:normal; margin-left:20px;
+}
+
+.pStyleContent{
+	font-family:Arial, Helvetica, sans-serif, 微軟正黑體; font-size:14px; color: #475868; font-weight:normal; margin-left:20px;
+}
+
+.pStyleEmail{
+	font-family:Arial, Helvetica, sans-serif, 微軟正黑體; font-size:14px; color: #475868; font-weight:normal; margin-left:20px;
+}
+
+.footerContent{
+	font-family:Arial, Helvetica, sans-serif, 微軟正黑體; font-size:12px; font-weight:normal;
+}
