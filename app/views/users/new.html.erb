@@ -1,6 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<meta property="og:title" content="MineMap" />
+	<meta property="og:type" content="company" />
+	<meta property="og:url" content="http://minemap.herokuapp.com/" />
+	<meta property="og:image" content="http://minemap.herokuapp.com/phone.png" />
+	<meta property="og:site_name" content="MineMap" />
+	<meta property="fb:admins" content="100000077301144" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <META name="keywords" content="地點記, Android App">
 <META name="description" content="地點記 MineMap : 隨手記錄生活地圖">
@@ -17,6 +23,14 @@
 
 
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=281900391849204";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="header" style="margin-top: 50px;">
 <table width="960" border="0" cellspacing="0" cellpadding="0" align="center">
@@ -33,6 +47,7 @@
     <td width="40">&nbsp;</td>
     <td width="680" style="vertical-align:top;">
     <div style="float:left; width:680px;">
+	<div class="fb-like" data-href="http://minemap.herokuapp.com/" data-send="true" data-width="450" data-show-faces="true"></div>
     <span>
     <p class="pStyle"><font color="#b00002">App大方送，任何完成以下問卷者，將享有獨家優惠!!!</font></p>
         <p class="pStyleSub"><font color="#475868">MineMap 致力於優化您的個人地圖，如果您有任何以下問題，請留下Email，我們會把解決您的問題，<br />
